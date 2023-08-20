@@ -1,0 +1,19 @@
+<h2>Resume Preview</h2>
+  <p><strong>Personal Information:</strong></p>
+  <p>Name: {{ personal_info.full_name }}</p>
+  <p>Email: {{ personal_info.email }}</p>
+  <p>Phone: {{ personal_info.phone_number }}</p>
+
+  <p><strong>Education:</strong></p>
+  <p>Institution: {{ education.institution }}</p>
+  <p>Degree: {{ education.degree }}</p>
+  <p>Graduation Year: {{ education.graduation_year }}</p>
+
+  <p><strong>Work Experience:</strong></p>
+  <p>Company: {{ work_experience.company }}</p>
+  <p>Position: {{ work_experience.position }}</p>
+  <p>Start Date: {{ work_experience.start_date }}</p>
+  <p>End Date: {{ work_experience.end_date }}</p>
+
+  <a href="{% url 'work_experience' %}">Previous Section</a>
+  <a href="{% url 'generate_pdf' %}">Generate PDF</a>

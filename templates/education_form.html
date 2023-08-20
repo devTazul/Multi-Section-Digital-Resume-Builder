@@ -1,0 +1,8 @@
+<h2>Education Information</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+  <a href="{% url 'personal_information' %}">Previous Section</a>
+  <a href="{% url 'work_experience' %}">Next Section</a>

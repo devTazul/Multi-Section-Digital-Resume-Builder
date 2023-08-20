@@ -1,0 +1,8 @@
+<h2>Work Experience</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+  <a href="{% url 'education' %}">Previous Section</a>
+  <a href="{% url 'preview_resume' %}">Preview Resume</a>
